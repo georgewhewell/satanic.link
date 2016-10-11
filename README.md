@@ -1,5 +1,7 @@
 # satanic.link
 
+[![Build Status](https://travis-ci.org/georgewhewell/satanic.link.svg?branch=master)](https://travis-ci.org/georgewhewell/satanic.link)
+
 Hosts the free satanic link shortening service at [satanic.link](satanic.link)
 
 # development
