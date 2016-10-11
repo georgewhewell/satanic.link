@@ -1,8 +1,11 @@
+from os.path import join, dirname
 from aiohttp import web
 
 url_map = {}
 
-homepage = open('index.html', 'rb').read()
+index_filename = join(dirname(__file__), 'index.html')
+homepage = open(index_filename, 'rb').read()
+
 index = lambda x: web.Response(body=homepage, content_type='text/html')
 
 
