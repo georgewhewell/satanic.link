@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: satanic-link
+  annotations:
+    stable.k8s.psg.io/kcm.enabled: "true"
+    stable.k8s.psg.io/kcm.provider: "googlecloud"
+    stable.k8s.psg.io/kcm.email: "georgerw@gmail.com"
+spec:
+  tls:
+  - hosts:
+    - satanic.link
+    secretName: cert-satanic.link
+  backend:
+    serviceName: satanic-link
+    servicePort: 8080
