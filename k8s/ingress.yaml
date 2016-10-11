@@ -13,4 +13,4 @@ spec:
     secretName: cert-satanic.link
   backend:
     serviceName: satanic-link
-    servicePort: 8080
+    servicePort: 80
